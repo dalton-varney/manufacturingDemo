@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block body %} 
+  
+  <div class="container" min-width= "1024px" width="100%">
+      <br>
+      <br>
+
+    <div class="card-deck">
+        <div>
+            <img id="streamer-image" src="{{ image }}">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" min-width= "1024px" width="100%">
+        <div class="col">
+            <a href="{{url_for('index')}}"><button class="btn home-btn"><i class="fa fa-home"></i> Home </button></a>
+        </div>
+        <div class="col">
+            <a href="{{url_for('view_all_rois')}}"><button class="btn btn-info" type="submit" name="program-configure"><i class="fa fa-cog"></i> Select Camera Feed </button></a>
+        </div>
+        <br>
+        <br>
+    </div>
+  
+  </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+.DS_Store
+alwaysai.app.json
+alwaysai.project.json
+alwaysai.target.json
+venv/
+models/
